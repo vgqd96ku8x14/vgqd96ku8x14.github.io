@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>果冻传媒孟若羽 - 官方视频门户 | 果冻传媒孟若羽品牌影像与创作者社区</title>
+<meta name="description" content="果冻传媒孟若羽官方网站，聚焦原创高清影像与创作者社区，呈现品牌故事、精品内容、创作者动态与行业观察，构建值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a1d24'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23ff5a5f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jmj-bg:#111318;
+  --jmj-surface:#171a21;
+  --jmj-surface-2:#1d2129;
+  --jmj-line:rgba(255,255,255,.08);
+  --jmj-text:#e9ebf0;
+  --jmj-muted:#9aa1ae;
+  --jmj-accent:#ff5a5f;
+  --jmj-accent-2:#38e0c4;
+  --jmj-glow:rgba(255,90,95,.35);
+  --jmj-radius:14px;
+  --jmj-max:1180px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--jmj-bg);
+  color:var(--jmj-text);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+
+.jmj-wrap{max-width:var(--jmj-max);margin:0 auto;padding:0 22px;}
+.jmj-sticky{position:sticky;top:0;z-index:60;}
+
+/* 公告条 */
+.jmj-notice{
+  background:linear-gradient(90deg,#ff5a5f 0%,#ff8a5c 55%,#38e0c4 130%);
+  color:#101216;
+  font-size:13.5px;
+  font-weight:600;
+}
+.jmj-notice-inner{
+  max-width:var(--jmj-max);margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:12px;
+  overflow:hidden;
+}
+.jmj-notice-badge{
+  flex:0 0 auto;background:#101216;color:#ffb3a0;
+  border-radius:999px;padding:2px 10px;font-size:12px;letter-spacing:.06em;
+}
+.jmj-notice-track{
+  display:flex;gap:40px;white-space:nowrap;
+  animation:jmj-scroll 26s linear infinite;
+}
+.jmj-notice-track:hover{animation-play-state:paused;}
+.jmj-notice-track span{opacity:.92;}
+.jmj-notice-track b{color:#101216;}
+@keyframes jmj-scroll{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+/* 页头 */
+.jmj-header{
+  background:rgba(17,19,24,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--jmj-line);
+}
+.jmj-header-inner{
+  max-width:var(--jmj-max);margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:22px;
+}
+.jmj-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.jmj-brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,#ff5a5f,#ffa25c 70%,#38e0c4);
+  display:grid;place-items:center;
+  box-shadow:0 6px 18px var(--jmj-glow);
+}
+.jmj-brand-mark svg{width:17px;height:17px;}
+.jmj-brand-name{font-size:16px;font-weight:800;letter-spacing:.02em;}
+.jmj-brand-sub{font-size:11px;color:var(--jmj-muted);letter-spacing:.14em;text-transform:uppercase;}
+.jmj-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap;}
+.jmj-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14px;color:var(--jmj-muted);
+  transition:.2s;
+}
+.jmj-nav a:hover,.jmj-nav a:focus-visible{color:#fff;background:rgba(255,255,255,.06);}
+.jmj-search{
+  flex:0 0 auto;display:flex;align-items:center;gap:6px;
+  background:var(--jmj-surface-2);border:1px solid var(--jmj-line);
+  border-radius:999px;padding:5px 6px 5px 14px;
+}
+.jmj-search input{
+  width:132px;background:transparent;border:none;outline:none;color:var(--jmj-text);
+  font-size:13px;font-family:inherit;
+}
+.jmj-search input::placeholder{color:#6b7280;}
+.jmj-search button{
+  background:var(--jmj-accent);color:#fff;border-radius:999px;
+  padding:5px 13px;font-size:13px;font-weight:600;
+}
+.jmj-search-msg{
+  display:none;font-size:12px;color:var(--jmj-accent-2);
+  position:absolute;right:22px;top:100%;margin-top:4px;
+  background:var(--jmj-surface-2);border:1px solid var(--jmj-line);
+  padding:4px 12px;border-radius:8px;
+}
+.jmj-burger{
+  display:none;width:38px;height:38px;border-radius:10px;
+  background:var(--jmj-surface-2);border:1px solid var(--jmj-line);
+  align-items:center;justify-content:center;
+}
+.jmj-burger span{display:block;width:17px;height:2px;background:#e9ebf0;position:relative;}
+.jmj-burger span::before,.jmj-burger span::after{
+  content:"";position:absolute;left:0;width:17px;height:2px;background:#e9ebf0;
+}
+.jmj-burger span::before{top:-6px;}
+.jmj-burger span::after{top:6px;}
+
+/* 通用 section */
+.jmj-section{padding:64px 0;}
+.jmj-section + .jmj-section{border-top:1px solid var(--jmj-line);}
+.jmj-sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:20px;margin-bottom:30px;flex-wrap:wrap;
+}
+.jmj-eyebrow{
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--jmj-accent);font-weight:700;margin-bottom:8px;
+}
+.jmj-sec-title{font-size:clamp(22px,3vw,30px);}
+.jmj-sec-desc{color:var(--jmj-muted);font-size:14px;max-width:640px;}
+.jmj-more{
+  font-size:13px;color:var(--jmj-accent-2);border-bottom:1px dashed rgba(56,224,196,.45);
+  padding-bottom:2px;white-space:nowrap;
+}
+
+/* 首屏 */
+.jmj-hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--jmj-line);
+  background:
+    radial-gradient(900px 420px at 82% -10%,rgba(255,90,95,.20),transparent 65%),
+    radial-gradient(700px 380px at 5% 110%,rgba(56,224,196,.14),transparent 60%),
+    var(--jmj-bg);
+}
+.jmj-hero-inner{
+  max-width:var(--jmj-max);margin:0 auto;padding:62px 22px 66px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:46px;align-items:center;
+}
+.jmj-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(255,90,95,.4);color:#ffb3a0;
+  background:rgba(255,90,95,.08);
+  border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:600;
+  margin-bottom:20px;
+}
+.jmj-hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--jmj-accent);display:inline-block;}
+.jmj-hero h1{
+  font-size:clamp(34px,5.4vw,58px);
+  letter-spacing:-.01em;line-height:1.14;
+}
+.jmj-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#ff5a5f,#ffa25c 60%,#38e0c4);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.jmj-hero-lead{
+  margin-top:18px;font-size:16px;color:#c8cdd6;max-width:560px;
+}
+.jmj-hero-intro{
+  margin-top:20px;font-size:14.2px;color:var(--jmj-muted);
+  border-left:3px solid var(--jmj-accent);padding-left:15px;max-width:580px;
+}
+.jmj-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.jmj-btn{
+  border-radius:999px;padding:11px 22px;font-size:14px;font-weight:600;
+  display:inline-flex;align-items:center;gap:8px;transition:.2s;
+}
+.jmj-btn-primary{background:var(--jmj-accent);color:#fff;box-shadow:0 10px 26px var(--jmj-glow);}
+.jmj-btn-primary:hover{transform:translateY(-2px);background:#ff6d72;}
+.jmj-btn-ghost{border:1px solid rgba(255,255,255,.18);color:#e9ebf0;}
+.jmj-btn-ghost:hover{border-color:var(--jmj-accent-2);color:var(--jmj-accent-2);}
+.jmj-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;margin-top:32px;
+}
+.jmj-stat{
+  background:rgba(255,255,255,.035);border:1px solid var(--jmj-line);
+  border-radius:12px;padding:14px 14px 12px;
+}
+.jmj-stat b{display:block;font-size:22px;color:#fff;letter-spacing:-.01em;}
+.jmj-stat span{font-size:12px;color:var(--jmj-muted);}
+.jmj-hero-visual{position:relative;}
+.jmj-hero-frame{
+  border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 30px 70px rgba(0,0,0,.55);
+  aspect-ratio:16/11;
+}
+.jmj-hero-frame img{width:100%;height:100%;object-fit:cover;}
+.jmj-hero-float{
+  position:absolute;left:-14px;bottom:-18px;
+  background:rgba(23,26,33,.94);border:1px solid rgba(255,90,95,.35);
+  border-radius:13px;padding:11px 16px;display:flex;align-items:center;gap:10px;
+  box-shadow:0 16px 36px rgba(0,0,0,.5);
+}
+.jmj-hero-float .dot{
+  width:9px;height:9px;border-radius:50%;background:var(--jmj-accent-2);
+  box-shadow:0 0 0 4px rgba(56,224,196,.18);
+}
+.jmj-hero-float small{color:var(--jmj-muted);font-size:12px;display:block;}
+.jmj-hero-float b{font-size:13px;}
+
+/* 数据条 */
+.jmj-metrics-strip{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;background:var(--jmj-line);
+  border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);
+  overflow:hidden;
+}
+.jmj-metrics-strip > div{
+  background:var(--jmj-surface);padding:20px 18px;
+}
+.jmj-metrics-strip b{display:block;font-size:24px;color:var(--jmj-accent-2);}
+.jmj-metrics-strip span{font-size:12.5px;color:var(--jmj-muted);}
+
+/* 焦点内容 */
+.jmj-focus-grid{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  gap:26px;align-items:start;
+}
+.jmj-card{
+  background:var(--jmj-surface);border:1px solid var(--jmj-line);
+  border-radius:var(--jmj-radius);overflow:hidden;transition:.22s;
+}
+.jmj-card:hover{border-color:rgba(255,90,95,.4);transform:translateY(-3px);}
+.jmj-focus-cover{aspect-ratio:16/9;overflow:hidden;position:relative;}
+.jmj-focus-cover img{width:100%;height:100%;object-fit:cover;}
+.jmj-focus-cover .play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,transparent 40%,rgba(10,12,16,.72));
+}
+.jmj-focus-cover .play span{
+  width:58px;height:58px;border-radius:50%;
+  background:rgba(255,90,95,.92);display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(255,90,95,.5);
+}
+.jmj-focus-cover .play span svg{width:20px;height:20px;fill:#fff;margin-left:3px;}
+.jmj-focus-body{padding:20px 22px 22px;}
+.jmj-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;}
+.jmj-tag{
+  font-size:11.5px;color:#ffb3a0;background:rgba(255,90,95,.12);
+  border:1px solid rgba(255,90,95,.28);border-radius:999px;padding:2px 10px;
+}
+.jmj-tag.alt{color:#8ef4e3;background:rgba(56,224,196,.1);border-color:rgba(56,224,196,.28);}
+.jmj-card h3{font-size:18.5px;margin-bottom:8px;}
+.jmj-card p{font-size:13.8px;color:var(--jmj-muted);margin-bottom:12px;}
+.jmj-card-foot{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;font-size:12.5px;color:var(--jmj-muted);flex-wrap:wrap;
+}
+.jmj-actions{display:flex;gap:6px;flex-wrap:wrap;}
+.jmj-act{
+  border:1px solid var(--jmj-line);border-radius:999px;padding:3px 11px;
+  font-size:12px;color:var(--jmj-muted);transition:.18s;background:rgba(255,255,255,.02);
+}
+.jmj-act:hover{color:#fff;border-color:rgba(255,255,255,.3);}
+.jmj-act.active{color:var(--jmj-accent);border-color:rgba(255,90,95,.5);background:rgba(255,90,95,.1);}
+.jmj-act.like.active{color:#ff8a5c;}
+.jmj-mini-list{display:grid;gap:12px;}
+.jmj-mini{
+  display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;
+  background:var(--jmj-surface);border:1px solid var(--jmj-line);
+  border-radius:12px;padding:11px;transition:.2s;
+}
+.jmj-mini:hover{border-color:rgba(56,224,196,.35);background:var(--jmj-surface-2);}
+.jmj-mini-thumb{
+  aspect-ratio:16/10;border-radius:9px;overflow:hidden;background:#0d0f13;
+}
+.jmj-mini-thumb img{width:100%;height:100%;object-fit:cover;}
+.jmj-mini h4{font-size:14.5px;margin-bottom:5px;}
+.jmj-mini p{font-size:12.6px;color:var(--jmj-muted);margin:0 0 7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.jmj-mini-meta{font-size:11.8px;color:#7e8694;display:flex;gap:10px;flex-wrap:wrap;}
+
+/* 专题 */
+.jmj-topic-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;
+}
+.jmj-topic{background:var(--jmj-surface);border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);overflow:hidden;display:flex;flex-direction:column;}
+.jmj-topic-cover{aspect-ratio:16/9;overflow:hidden;}
+.jmj-topic-cover img{width:100%;height:100%;object-fit:cover;}
+.jmj-topic-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.jmj-topic h3{font-size:17px;}
+.jmj-topic .desc{font-size:13.4px;color:var(--jmj-muted);}
+.jmj-status{
+  align-self:flex-start;font-size:11.5px;border-radius:999px;padding:2px 10px;
+  background:rgba(56,224,196,.12);color:#8ef4e3;border:1px solid rgba(56,224,196,.3);
+}
+.jmj-status.ing{background:rgba(255,162,92,.12);color:#ffca9c;border-color:rgba(255,162,92,.32);}
+.jmj-topic ul{display:grid;gap:8px;margin-top:2px;}
+.jmj-topic ul li{
+  font-size:12.9px;color:#b9c0cc;display:flex;gap:8px;
+  padding-bottom:8px;border-bottom:1px dashed rgba(255,255,255,.07);
+}
+.jmj-topic ul li:last-child{border-bottom:none;padding-bottom:0;}
+.jmj-topic ul li i{color:var(--jmj-accent);font-style:normal;font-weight:700;}
+
+/* 创作者 */
+.jmj-creators{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;
+}
+.jmj-creator{
+  background:linear-gradient(180deg,var(--jmj-surface-2),var(--jmj-surface));
+  border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);
+  padding:22px 20px;display:flex;flex-direction:column;gap:12px;transition:.22s;
+}
+.jmj-creator:hover{border-color:rgba(255,90,95,.4);}
+.jmj-avatar{
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:19px;color:#101216;flex:0 0 auto;
+}
+.jmj-creator-top{display:flex;gap:13px;align-items:center;}
+.jmj-creator-top b{font-size:15.5px;display:block;}
+.jmj-creator-top small{font-size:12px;color:var(--jmj-muted);}
+.jmj-creator p{font-size:13.2px;color:var(--jmj-muted);margin:0;flex:1;}
+.jmj-creator .stats{font-size:12px;color:#8ef4e3;display:flex;gap:14px;}
+.jmj-creator button{
+  align-self:flex-start;font-size:12.5px;border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;padding:5px 14px;color:#e9ebf0;
+}
+.jmj-creator button:hover{border-color:var(--jmj-accent);color:var(--jmj-accent);}
+
+/* 解析长文 */
+.jmj-deep{background:var(--jmj-surface);border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);padding:32px clamp(20px,3.4vw,40px);}
+.jmj-deep h2{font-size:clamp(22px,3vw,29px);margin-bottom:8px;}
+.jmj-deep .jmj-sec-desc{margin-bottom:22px;}
+.jmj-deep h3{font-size:17.5px;color:#fff;margin:26px 0 10px;padding-left:14px;position:relative;}
+.jmj-deep h3::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:3px;background:linear-gradient(180deg,#ff5a5f,#38e0c4);}
+.jmj-deep p{font-size:14.6px;color:#b8bfca;}
+
+/* 评论 */
+.jmj-comments{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;}
+.jmj-comment{
+  background:var(--jmj-surface);border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);
+  padding:18px 20px;
+}
+.jmj-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+.jmj-comment-top .jmj-avatar{width:36px;height:36px;font-size:14px;}
+.jmj-comment-top b{font-size:13.8px;display:block;}
+.jmj-comment-top small{font-size:11.5px;color:#7e8694;}
+.jmj-comment p{font-size:13.6px;color:#b8bfca;margin:0;}
+.jmj-score{
+  display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+  background:var(--jmj-surface-2);border:1px solid var(--jmj-line);
+  border-radius:var(--jmj-radius);padding:20px 24px;margin-bottom:24px;
+}
+.jmj-score .big{font-size:42px;font-weight:800;color:var(--jmj-accent);line-height:1;}
+.jmj-score .bars{flex:1;min-width:200px;display:grid;gap:6px;}
+.jmj-bar{height:7px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;}
+.jmj-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#ff5a5f,#38e0c4);}
+
+/* 榜单 */
+.jmj-rank{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;}
+.jmj-rank-col{background:var(--jmj-surface);border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);padding:20px 20px 12px;}
+.jmj-rank-col h3{font-size:15.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.jmj-rank-col h3 span{font-size:11.5px;color:#8ef4e3;border:1px solid rgba(56,224,196,.3);border-radius:999px;padding:1px 9px;}
+.jmj-rank-item{
+  display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.07);
+}
+.jmj-rank-item:last-child{border-bottom:none;}
+.jmj-rank-no{
+  width:24px;height:24px;border-radius:7px;background:rgba(255,255,255,.06);
+  display:grid;place-items:center;font-size:12px;font-weight:700;color:#9aa1ae;flex:0 0 auto;
+}
+.jmj-rank-item:nth-child(2) .jmj-rank-no{background:rgba(255,90,95,.18);color:#ff9d9f;}
+.jmj-rank-item:nth-child(3) .jmj-rank-no{background:rgba(56,224,196,.14);color:#8ef4e3;}
+.jmj-rank-item h4{font-size:13.6px;margin:0 0 2px;}
+.jmj-rank-item span{font-size:11.6px;color:#7e8694;}
+
+/* 辅助区 */
+.jmj-aux-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;align-items:start;}
+.jmj-panel{background:var(--jmj-surface);border:1px solid var(--jmj-line);border-radius:var(--jmj-radius);padding:22px;}
+.jmj-panel h3{font-size:16.5px;margin-bottom:14px;}
+.jmj-news li{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.07);font-size:13.4px;color:#b8bfca;}
+.jmj-news li:last-child{border-bottom:none;}
+.jmj-news li time{color:#7e8694;font-size:12px;flex:0 0 74px;}
+.jmj-partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;}
+.jmj-partner{
+  border:1px solid var(--jmj-line);border-radius:10px;padding:14px 10px;text-align:center;
+  font-size:12.6px;color:#aab1bd;background:rgba(255,255,255,.02);
+}
+.jmj-faq details{
+  border-bottom:1px solid var(--jmj-line);padding:11px 0;
+}
+.jmj-faq details:last-child{border-bottom:none;}
+.jmj-faq summary{
+  font-size:13.9px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;color:#e9ebf0;
+}
+.jmj-faq summary::-webkit-details-marker{display:none;}
+.jmj-faq summary::after{content:"+";color:var(--jmj-accent);font-weight:700;}
+.jmj-faq details[open] summary::after{content:"−";}
+.jmj-faq p{font-size:13px;color:var(--jmj-muted);margin:9px 0 0;}
+
+/* 页脚 */
+.jmj-footer{background:#0c0e12;border-top:1px solid var(--jmj-line);padding:48px 0 26px;margin-top:10px;}
+.jmj-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px;}
+.jmj-footer h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.04em;}
+.jmj-footer p,.jmj-footer a,.jmj-footer li{font-size:12.8px;color:#8b93a1;line-height:2;}
+.jmj-footer a:hover{color:var(--jmj-accent-2);}
+.jmj-footer-bottom{
+  border-top:1px solid var(--jmj-line);padding-top:18px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.2px;color:#6b7280;
+}
+
+/* 弹层 / toast */
+.jmj-modal{
+  position:fixed;inset:0;z-index:120;display:none;
+  background:rgba(8,10,13,.72);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;padding:20px;
+}
+.jmj-modal.open{display:flex;}
+.jmj-modal-box{
+  background:var(--jmj-surface-2);border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;max-width:520px;width:100%;padding:26px 26px 22px;
+  box-shadow:0 30px 70px rgba(0,0,0,.6);
+}
+.jmj-modal-box h3{font-size:18px;margin-bottom:10px;}
+.jmj-modal-box p{font-size:13.6px;color:var(--jmj-muted);}
+.jmj-modal-box textarea,.jmj-modal-box input{
+  width:100%;background:#12151b;border:1px solid var(--jmj-line);border-radius:10px;
+  color:#e9ebf0;padding:10px 12px;font-family:inherit;font-size:13.5px;outline:none;margin-bottom:12px;
+}
+.jmj-modal-close{
+  margin-top:6px;background:var(--jmj-accent);color:#fff;border-radius:999px;padding:9px 20px;font-size:13.5px;font-weight:600;
+}
+.jmj-toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);
+  background:#22262f;border:1px solid rgba(56,224,196,.4);color:#d8fcf5;
+  padding:9px 20px;border-radius:999px;font-size:13px;z-index:200;
+  opacity:0;pointer-events:none;transition:.28s;
+}
+.jmj-toast.show{opacity:1;transform:translate(-50%,0);}
+
+/* 回顶 */
+.jmj-top{
+  position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  background:var(--jmj-accent);color:#fff;display:grid;place-items:center;
+  box-shadow:0 12px 28px var(--jmj-glow);z-index:90;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.jmj-top.show{opacity:1;pointer-events:auto;}
+
+@media (max-width:900px){
+  .jmj-hero-inner{grid-template-columns:minmax(0,1fr);gap:32px;padding-top:44px;}
+  .jmj-focus-grid{grid-template-columns:minmax(0,1fr);}
+  .jmj-footer-grid{grid-template-columns:1fr 1fr;}
+  .jmj-metrics-strip{grid-template-columns:1fr 1fr;}
+  .jmj-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:rgba(17,19,24,.98);border-bottom:1px solid var(--jmj-line);
+    padding:12px 22px;flex-direction:column;gap:2px;
+  }
+  .jmj-nav.open{display:flex;}
+  .jmj-search{display:none;}
+  .jmj-burger{display:flex;margin-left:auto;}
+  .jmj-header-inner{position:relative;}
+}
+@media (max-width:520px){
+  .jmj-section{padding:46px 0;}
+  .jmj-hero-stats{grid-template-columns:1fr 1fr;}
+  .jmj-mini{grid-template-columns:84px minmax(0,1fr);}
+  .jmj-footer-grid{grid-template-columns:1fr;}
+  .jmj-notice-inner{padding:8px 16px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 + 页头（吸顶） -->
+<div class="jmj-sticky">
+  <div class="jmj-notice">
+    <div class="jmj-notice-inner">
+      <span class="jmj-notice-badge">官方发布</span>
+      <div class="jmj-notice-track" aria-label="最新动态滚动">
+        <span>《孟若羽·影像手记》第七期上线，4K HDR 版本同步开放观看</span>
+        <span>“城市光影”原创影像征集开启报名，截止 12 月 18 日</span>
+        <span>创作者扶持计划三期名额公布，新增 30 位签约创作者</span>
+        <span>《孟若羽·影像手记》第七期上线，4K HDR 版本同步开放观看</span>
+        <span>“城市光影”原创影像征集开启报名，截止 12 月 18 日</span>
+        <span>创作者扶持计划三期名额公布，新增 30 位签约创作者</span>
+      </div>
+    </div>
+  </div>
+  <header class="jmj-header">
+    <div class="jmj-header-inner">
+      <a class="jmj-brand" href="#jmj-top" aria-label="果冻传媒孟若羽官方首页">
+        <span class="jmj-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z" fill="#fff"/></svg>
+        </span>
+        <span>
+          <span class="jmj-brand-name">果冻传媒 · 孟若羽</span>
+          <span class="jmj-brand-sub">official video portal</span>
+        </span>
+      </a>
+      <nav class="jmj-nav" id="jmjNav" aria-label="主导航">
+        <a href="#jmj-focus">焦点内容</a>
+        <a href="#jmj-topics">专题企划</a>
+        <a href="#jmj-creators">创作者</a>
+        <a href="#jmj-deep">品牌解析</a>
+        <a href="#jmj-voices">用户口碑</a>
+        <a href="#jmj-aux">品牌动态</a>
+      </nav>
+      <form class="jmj-search" id="jmjSearchForm" role="search" onsubmit="return false;">
+        <input id="jmjSearchInput" type="search" placeholder="搜索影像 / 创作者" aria-label="站内搜索">
+        <button type="submit" id="jmjSearchBtn">搜索</button>
+      </form>
+      <span class="jmj-search-msg" id="jmjSearchMsg" role="status" aria-live="polite"></span>
+      <button class="jmj-burger" id="jmjBurger" aria-label="展开导航" aria-expanded="false" aria-controls="jmjNav"><span></span></button>
+    </div>
+  </header>
+</div>
+
+<main id="jmj-top">
+
+  <!-- 首屏 -->
+  <section class="jmj-hero" aria-labelledby="jmj-hero-title">
+    <div class="jmj-hero-inner">
+      <div>
+        <span class="jmj-hero-tag"><i></i>官方网站 · 果冻传媒孟若羽品牌影像门户</span>
+        <h1 id="jmj-hero-title">果冻传媒<em>孟若羽</em></h1>
+        <p class="jmj-hero-lead">以真实影像记录城市与人，用专业与匠心打磨每一帧。果冻传媒孟若羽官方网站，持续运营的原创高清视频品牌与创作者社区。</p>
+        <p class="jmj-hero-intro">作为深耕原创影像领域的品牌平台，果冻传媒孟若羽致力于为创作者与企业搭建高品质内容生态：从选题策划、拍摄制作到正版分发，形成可被信赖的内容链路，让每一部作品都有清晰的来处与去处。</p>
+        <div class="jmj-hero-actions">
+          <a class="jmj-btn jmj-btn-primary" href="#jmj-focus">观看精品内容
+            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg>
+          </a>
+          <a class="jmj-btn jmj-btn-ghost" href="#jmj-creators">认识创作者</a>
+          <button class="jmj-btn jmj-btn-ghost" data-jmj-modal="submit" type="button">投稿 / 报名</button>
+        </div>
+        <div class="jmj-hero-stats">
+          <div class="jmj-stat"><b data-jmj-count="2860">2,860+</b><span>原创高清作品</span></div>
+          <div class="jmj-stat"><b data-jmj-count="412">412 位</b><span>签约与合作创作者</span></div>
+          <div class="jmj-stat"><b data-jmj-count="98">98.2%</b><span>用户口碑好评率</span></div>
+        </div>
+      </div>
+      <div class="jmj-hero-visual">
+        <div class="jmj-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1f2a'/%3E%3Cstop offset='1' stop-color='%232b1d24'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff5a5f'/%3E%3Cstop offset='1' stop-color='%23ffa25c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Cg opacity='.35'%3E%3Ccircle cx='600' cy='140' r='120' fill='%2338e0c4' opacity='.3'/%3E%3Ccircle cx='180' cy='430' r='160' fill='%23ff5a5f' opacity='.25'/%3E%3C/g%3E%3Cg%3E%3Crect x='90' y='120' width='330' height='300' rx='18' fill='%23139' opacity='.4'/%3E%3Crect x='90' y='120' width='330' height='300' rx='18' fill='none' stroke='%23ffffff' stroke-opacity='.22' stroke-width='2'/%3E%3Cpath d='M210 240l120 70-120 70z' fill='%23ff8a5c'/%3E%3Crect x='460' y='150' width='250' height='18' rx='9' fill='url(%23g2)' opacity='.9'/%3E%3Crect x='460' y='196' width='190' height='14' rx='7' fill='%23ffffff' opacity='.35'/%3E%3Crect x='460' y='230' width='220' height='14' rx='7' fill='%23ffffff' opacity='.22'/%3E%3Crect x='460' y='300' width='250' height='8' rx='4' fill='%23ffffff' opacity='.15'/%3E%3Crect x='460' y='322' width='170' height='8' rx='4' fill='%23ffffff' opacity='.15'/%3E%3Crect x='460' y='344' width='210' height='8' rx='4' fill='%23ffffff' opacity='.15'/%3E%3C/g%3E%3Cg%3E%3Crect x='90' y='450' width='620' height='1' fill='%23ffffff' opacity='.12'/%3E%3Crect x='90' y='470' width='120' height='10' rx='5' fill='%23ff5a5f' opacity='.8'/%3E%3Crect x='226' y='470' width='90' height='10' rx='5' fill='%23ffffff' opacity='.18'/%3E%3Crect x='332' y='470' width='140' height='10' rx='5' fill='%23ffffff' opacity='.12'/%3E%3C/g%3E%3C/svg%3E" alt="果冻传媒孟若羽品牌主视觉：暗色影像工作台与播放标识" width="800" height="550" loading="eager">
+        </div>
+        <div class="jmj-hero-float">
+          <span class="dot" aria-hidden="true"></span>
+          <span>
+            <small>本周首播</small>
+            <b>《光影之间：一位创作者的城市手记》</b>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="jmj-section" id="jmj-focus" aria-labelledby="jmj-focus-title">
+    <div class="jmj-wrap">
+      <div class="jmj-sec-head">
+        <div>
+          <div class="jmj-eyebrow">Focus on jellimedia mengruoyu</div>
+          <h2 class="jmj-sec-title" id="jmj-focus-title">本周焦点｜果冻传媒孟若羽的精品内容</h2>
+          <p class="jmj-sec-desc">由官方编辑部与签约创作者共同推选，聚焦真实记录、专业制作与值得反复观看的高清影像。</p>
+        </div>
+        <button class="jmj-btn jmj-btn-ghost" data-jmj-modal="share" type="button">分享本期片单</button>
+      </div>
+
+      <div class="jmj-focus-grid">
+        <article class="jmj-card">
+          <div class="jmj-focus-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23251a2e'/%3E%3Cstop offset='1' stop-color='%23142b33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23c1)'/%3E%3Cg%3E%3Cpath d='M0 330 Q160 250 320 320 T800 290V450H0Z' fill='%230e1218' opacity='.85'/%3E%3Cpath d='M0 370 Q200 300 400 360 T800 340V450H0Z' fill='%231a2430' opacity='.9'/%3E%3Crect x='120' y='120' width='180' height='120' rx='10' fill='%23ff5a5f' opacity='.2'/%3E%3Crect x='120' y='120' width='180' height='120' rx='10' fill='none' stroke='%23ff8a5c' stroke-width='2' opacity='.7'/%3E%3Ccircle cx='560' cy='180' r='76' fill='%2338e0c4' opacity='.18'/%3E%3Ccircle cx='560' cy='180' r='46' fill='%2338e0c4' opacity='.32'/%3E%3Cpath d='M540 158l36 22-36 22z' fill='%23e6fffb'/%3E%3C/g%3E%3C/svg%3E" alt="焦点内容封面：夜色城市与影像播放界面" width="800" height="450" loading="lazy">
+            <div class="play" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+          </div>
+          <div class="jmj-focus-body">
+            <div class="jmj-meta">
+              <span class="jmj-tag">城市探索</span>
+              <span class="jmj-tag alt">4K 高清</span>
+              <span class="jmj-tag alt">官方发布</span>
+            </div>
+            <h3>光影之间：一位创作者的城市手记</h3>
+            <p>孟若羽团队用 14 天记录三座城市的清晨与深夜，从菜市场到天台，从老巷到末班公交。镜头语言克制，情绪却饱满，是一份关于“真实”的影像答卷。</p>
+            <div class="jmj-card-foot">
+              <span>孟若羽工作室 · 32:18 · 12.6 万次观看</span>
+              <div class="jmj-actions">
+                <button class="jmj-act like" data-jmj-like="12680" type="button">赞 <b>12,680</b></button>
+                <button class="jmj-act fav" data-jmj-fav type="button">收藏</button>
+                <button class="jmj-act" data-jmj-copy type="button">复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="jmj-mini-list">
+          <article class="jmj-mini">
+            <div class="jmj-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%231b2330'/%3E%3Cg opacity='.55'%3E%3Crect x='28' y='40' width='120' height='9' rx='4' fill='%2338e0c4'/%3E%3Crect x='28' y='62' width='86' height='7' rx='3' fill='%23ffffff' opacity='.4'/%3E%3Crect x='28' y='82' width='150' height='7' rx='3' fill='%23ffffff' opacity='.25'/%3E%3Ccircle cx='240' cy='120' r='54' fill='%23ff5a5f' opacity='.28'/%3E%3Cpath d='M224 102l34 20-34 20z' fill='%23fff' opacity='.9'/%3E%3C/g%3E%3C/svg%3E" alt="教程封面：剪辑时间线示意图" width="320" height="200" loading="lazy">
+            </div>
+            <div>
+              <h4>三分半讲清：一支短片的剪辑节奏</h4>
+              <p>从素材筛选到粗剪、从调色到混音，孟若羽复盘自己的剪辑台，分享可复用的节奏模板。</p>
+              <div class="jmj-mini-meta"><span>教程干货</span><span>08:42</span><span>4.1 万播放</span></div>
+            </div>
+          </article>
+          <article class="jmj-mini">
+            <div class="jmj-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23231d1a'/%3E%3Cg%3E%3Ccircle cx='90' cy='90' r='46' fill='%23ffa25c' opacity='.35'/%3E%3Ccircle cx='90' cy='90' r='24' fill='%23ffd0a3' opacity='.7'/%3E%3Crect x='170' y='58' width='110' height='8' rx='4' fill='%23ffffff' opacity='.35'/%3E%3Crect x='170' y='80' width='80' height='8' rx='4' fill='%23ffffff' opacity='.22'/%3E%3Crect x='170' y='116' width='100' height='8' rx='4' fill='%23ff5a5f' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="访谈封面：暖灯下的人物轮廓" width="320" height="200" loading="lazy">
+            </div>
+            <div>
+              <h4>访谈：镜头之外，我们为什么还在拍</h4>
+              <p>聊创作焦虑、聊团队协作、聊一句“值得信赖”意味着什么，一次坦诚的行业观察。</p>
+              <div class="jmj-mini-meta"><span>人物访谈</span><span>21:06</span><span>7.3 万播放</span></div>
+            </div>
+          </article>
+          <article class="jmj-mini">
+            <div class="jmj-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%2315201c'/%3E%3Cg opacity='.7'%3E%3Cpath d='M0 150 Q80 110 160 146 T320 130V200H0Z' fill='%2338e0c4' opacity='.25'/%3E%3Cpath d='M0 168 Q100 132 200 164 T320 152V200H0Z' fill='%2338e0c4' opacity='.18'/%3E%3Crect x='40' y='44' width='90' height='7' rx='3' fill='%23e6fffb' opacity='.6'/%3E%3Crect x='40' y='62' width='140' height='5' rx='2' fill='%23ffffff' opacity='.3'/%3E%3C/g%3E%3C/svg%3E" alt="治愈影像封面：自然绿坡与晨雾" width="320" height="200" loading="lazy">
+            </div>
+            <div>
+              <h4>慢一点：清晨六点的城市呼吸</h4>
+              <p>没有旁白的九分钟长镜头，只保留环境声。适合清晨或深夜打开，安静地看完。</p>
+              <div class="jmj-mini-meta"><span>治愈影像</span><span>09:12</span><span>5.8 万播放</span></div>
+            </div>
+          </article>
+          <article class="jmj-mini">
+            <div class="jmj-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23202a3a'/%3E%3Cg%3E%3Crect x='30' y='34' width='86' height='132' rx='8' fill='%23ffffff' opacity='.08'/%3E%3Crect x='126' y='34' width='86' height='132' rx='8' fill='%23ffffff' opacity='.14'/%3E%3Crect x='222' y='34' width='68' height='132' rx='8' fill='%23ff5a5f' opacity='.22'/%3E%3Crect x='40' y='120' width='66' height='6' rx='3' fill='%2338e0c4' opacity='.8'/%3E%3C/g%3E%3C/svg%3E" alt="测评封面：三块并排的显示屏幕" width="320" height="200" loading="lazy">
+            </div>
+            <div>
+              <h4>测评：三套拍摄设备，谁的直出更能打</h4>
+              <p>同场景、同光线、同参数，横向对比三套设备的直出色彩与高光表现，结论在最后。</p>
+              <div class="jmj-mini-meta"><span>深度测评</span><span>15:37</span><span>9.2 万播放</span></div>
+            </div>
+          </article>
+          <article class="jmj-mini">
+            <div class="jmj-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23241728'/%3E%3Cg opacity='.8'%3E%3Ccircle cx='160' cy='98' r='58' fill='none' stroke='%23ff8a5c' stroke-width='2' opacity='.6'/%3E%3Ccircle cx='160' cy='98' r='30' fill='%23ff5a5f' opacity='.4'/%3E%3Crect x='40' y='168' width='80' height='6' rx='3' fill='%23ffffff' opacity='.3'/%3E%3Crect x='132' y='168' width='120' height='6' rx='3' fill='%23ffffff' opacity='.18'/%3E%3C/g%3E%3C/svg%3E" alt="幕后封面：圆形取景框与暖色光斑" width="320" height="200" loading="lazy">
+            </div>
+            <div>
+              <h4>创作幕后：一场夜戏是怎么拍成的</h4>
+              <p>灯光、收音、走位、补拍，四小时素材压缩成十二分钟，完整呈现团队协作的细节。</p>
+              <div class="jmj-mini-meta"><span>创作幕后</span><span>12:05</span><span>6.4 万播放</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="jmj-metrics-strip" style="margin-top:30px;">
+        <div><b>2,860+</b><span>原创高清内容持续更新</span></div>
+        <div><b>412</b><span>签约与合作创作者</span></div>
+        <div><b>36 座</b><span>影像覆盖城市</span></div>
+        <div><b>98.2%</b><span>用户口碑与好评率</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="jmj-section" id="jmj-topics" aria-labelledby="jmj-topics-title">
+    <div class="jmj-wrap">
+      <div class="jmj-sec-head">
+        <div>
+          <div class="jmj-eyebrow">Series &amp; campaigns</div>
+          <h2 class="jmj-sec-title" id="jmj-topics-title">专题企划｜果冻传媒孟若羽的内容生态</h2>
+          <p class="jmj-sec-desc">以专题为单位长期运营，让好内容被系统性地看见，也让创作者拥有可沉淀的作品集。</p>
+        </div>
+      </div>
+
+      <div class="jmj-topic-grid">
+        <article class="jmj-topic">
+          <div class="jmj-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23161c26'/%3E%3Cg%3E%3Crect x='40' y='44' width='250' height='180' rx='10' fill='%23ff5a5f' opacity='.16'/%3E%3Crect x='40' y='44' width='250' height='180' rx='10' fill='none' stroke='%23ff5a5f' stroke-opacity='.5'/%3E%3Crect x='320' y='80' width='270' height='10' rx='5' fill='%23ffffff' opacity='.3'/%3E%3Crect x='320' y='108' width='200' height='8' rx='4' fill='%23ffffff' opacity='.18'/%3E%3Crect x='320' y='150' width='240' height='8' rx='4' fill='%2338e0c4' opacity='.5'/%3E%3Crect x='320' y='176' width='160' height='8' rx='4' fill='%23ffffff' opacity='.18'/%3E%3Cpath d='M150 110l50 30-50 30z' fill='%23ffb3a0' opacity='.9'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：城市光影企划的视觉板" width="640" height="360" loading="lazy">
+          </div>
+          <div class="jmj-topic-body">
+            <span class="jmj-status">更新中 · 第 3 季</span>
+            <h3>城市光影计划</h3>
+            <p class="desc">一年四城，用影像记录城市在一天之内的不同光感，强调真实、克制与在地文化。</p>
+            <ul>
+              <li><i>01</i>第一缕光：菜市场开市前的两小时</li>
+              <li><i>02</i>正午白墙：老街的光比与影子</li>
+              <li><i>03</i>午夜末班：城市收工之后</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jmj-topic">
+          <div class="jmj-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231a2420'/%3E%3Cg%3E%3Cpath d='M0 280 Q160 220 320 270 T640 250V360H0Z' fill='%2338e0c4' opacity='.18'/%3E%3Crect x='60' y='70' width='180' height='120' rx='12' fill='%23ffffff' opacity='.07'/%3E%3Crect x='270' y='100' width='180' height='120' rx='12' fill='%23ffffff' opacity='.1'/%3E%3Crect x='480' y='70' width='110' height='120' rx='12' fill='%23ffa25c' opacity='.18'/%3E%3Ccircle cx='150' cy='130' r='30' fill='%2338e0c4' opacity='.4'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：新手创作者成长路径的图表化插画" width="640" height="360" loading="lazy">
+          </div>
+          <div class="jmj-topic-body">
+            <span class="jmj-status ing">报名中 · 12 月 18 日截止</span>
+            <h3>新锐创作者扶持计划</h3>
+            <p class="desc">面向首次投稿的创作者，提供选题辅导、设备支持与官方流量扶持，帮助完成第一部作品。</p>
+            <ul>
+              <li><i>01</i>从 0 到 1：选题与脚本打磨工作坊</li>
+              <li><i>02</i>剪辑门诊：一对一作品诊断</li>
+              <li><i>03</i>首映之夜：入选作品官方展映</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jmj-topic">
+          <div class="jmj-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23221b2c'/%3E%3Cg opacity='.8'%3E%3Crect x='70' y='60' width='120' height='240' rx='12' fill='%23ff5a5f' opacity='.22'/%3E%3Crect x='210' y='90' width='120' height='210' rx='12' fill='%23ffffff' opacity='.08'/%3E%3Crect x='350' y='60' width='120' height='240' rx='12' fill='%2338e0c4' opacity='.18'/%3E%3Crect x='490' y='110' width='90' height='190' rx='12' fill='%23ffa25c' opacity='.18'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：四组并列的影像档案卡" width="640" height="360" loading="lazy">
+          </div>
+          <div class="jmj-topic-body">
+            <span class="jmj-status">已完结 · 共 12 集</span>
+            <h3>创作者档案室</h3>
+            <p class="desc">每集走进一位创作者的日常，看他们如何平衡表达与生活，如何理解“正版”“原创”与品质。</p>
+            <ul>
+              <li><i>01</i>她把镜头对准了自己的出租屋</li>
+              <li><i>02</i>一个摄影师的十年硬盘</li>
+              <li><i>03</i>剪辑师的一天：从早九点到凌晨两点</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="jmj-section" id="jmj-creators" aria-labelledby="jmj-creators-title">
+    <div class="jmj-wrap">
+      <div class="jmj-sec-head">
+        <div>
+          <div class="jmj-eyebrow">Creators &amp; authors</div>
+          <h2 class="jmj-sec-title" id="jmj-creators-title">创作者矩阵｜果冻传媒孟若羽的伙伴们</h2>
+          <p class="jmj-sec-desc">他们来自不同城市与行业，但共享同一套对画面与真实的要求。点击可查看创作者档案。</p>
+        </div>
+      </div>
+
+      <div class="jmj-creators">
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ff5a5f,#ffa25c);" aria-hidden="true">孟</span>
+            <span>
+              <b>孟若羽</b>
+              <small>品牌主理人 · 导演 / 城市探索</small>
+            </span>
+          </div>
+          <p>坚持用长镜头与自然光记录城市，擅长在平凡场景中提炼情绪。主张“先真实，再好看”，是果冻传媒孟若羽影像风格的主要塑造者。</p>
+          <div class="stats"><span>作品 186</span><span>粉丝 42.6 万</span></div>
+          <button type="button" data-jmj-author="孟若羽|品牌主理人，代表作《光影之间》《慢一点》，主张先真实再好看。">查看档案</button>
+        </article>
+
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#38e0c4,#8ef4e3);" aria-hidden="true">舟</span>
+            <span>
+              <b>阿舟</b>
+              <small>剪辑指导 · 教程干货 / 创作幕后</small>
+            </span>
+          </div>
+          <p>十年剪辑台经验，擅长把复杂流程拆成可执行的小步骤。他的教程强调“能落地”，平均每期给出可直接复用的时间线模板与参数。</p>
+          <div class="stats"><span>作品 92</span><span>粉丝 18.3 万</span></div>
+          <button type="button" data-jmj-author="阿舟|剪辑指导，教程以可落地著称，常分享时间线模板与调色参数。">查看档案</button>
+        </article>
+
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#7c6cff,#38a1e0);" aria-hidden="true">栖</span>
+            <span>
+              <b>林小栖</b>
+              <small>纪录片导演 · 人物访谈 / 在地文化</small>
+            </span>
+          </div>
+          <p>专注于普通人的长期跟拍，一部作品往往跨越半年以上。她相信耐心本身就是一种叙事技术，也是内容生态里最稀缺的品质。</p>
+          <div class="stats"><span>作品 47</span><span>粉丝 11.9 万</span></div>
+          <button type="button" data-jmj-author="林小栖|纪录片导演，擅长长期跟拍普通人，作品周期常超过半年。">查看档案</button>
+        </article>
+
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ffa25c,#ffe0a3);" aria-hidden="true">山</span>
+            <span>
+              <b>山海之间</b>
+              <small>影像团队 · 户外活动 / 治愈影像</small>
+            </span>
+          </div>
+          <p>由三人组成的户外影像小组，长期记录山野与海岸。设备轻、行程长、素材多，擅长用极简结构呈现自然的力量与安静。</p>
+          <div class="stats"><span>作品 63</span><span>粉丝 15.7 万</span></div>
+          <button type="button" data-jmj-author="山海之间|三人户外影像小组，长期记录山野海岸，结构极简、情绪饱满。">查看档案</button>
+        </article>
+
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#e0e6ef,#9aa1ae);color:#171a21;" aria-hidden="true">九</span>
+            <span>
+              <b>九号片场</b>
+              <small>技术测评 · 深度测评 / 科技前沿</small>
+            </span>
+          </div>
+          <p>以标准化测试流程著称，同一场景、同一光线、同一参数横向对比设备表现。结论清晰，敢于给出明确建议，口碑稳定。</p>
+          <div class="stats"><span>作品 108</span><span>粉丝 22.4 万</span></div>
+          <button type="button" data-jmj-author="九号片场|技术测评团队，标准化测试流程，结论明确，重视客观与可复现。">查看档案</button>
+        </article>
+
+        <article class="jmj-creator">
+          <div class="jmj-creator-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ff8a5c,#ff5a5f);" aria-hidden="true">南</span>
+            <span>
+              <b>南方慢记</b>
+              <small>生活方式 · 日常记录 / 治愈影像</small>
+            </span>
+          </div>
+          <p>记录厨房、阳台与街角的小事，画面干净、节奏舒缓。她说做内容像做家务，重复而必要，但日复一日会累积出温度。</p>
+          <div class="stats"><span>作品 74</span><span>粉丝 13.2 万</span></div>
+          <button type="button" data-jmj-author="南方慢记|生活方式创作者，记录厨房与街角小事，节奏舒缓、质感干净。">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析 800 字以上 -->
+  <section class="jmj-section" id="jmj-deep" aria-labelledby="jmj-deep-title">
+    <div class="jmj-wrap">
+      <div class="jmj-deep">
+        <div class="jmj-eyebrow">Brand interpretation</div>
+        <h2 id="jmj-deep-title">果冻传媒孟若羽品牌深度解析</h2>
+        <p class="jmj-sec-desc">为什么一个视频品牌要坚持“慢”、坚持“真”、坚持长期运营？这一部分尝试把果冻传媒孟若羽的内容方法、创作者机制与社区价值讲清楚。</p>
+
+        <h3>从一段影像开始：品牌定位与内容方法</h3>
+        <p>果冻传媒孟若羽并不是从“要做多大的平台”开始的，而是从一段关于城市清晨的影像开始。最初的素材只有二十多分钟，没有解说、没有配乐，只有街道的声音和光线变化。团队把这段素材剪成三个版本，最后留下了最朴素的第七版。这次取舍，后来成为品牌的方法论：先判断内容是否真实成立，再讨论它是否好看。作为官方网站对外呈现的第一层信息，我们希望访客在这里看到的不只是作品列表，而是一套可被理解、可被复用的内容判断标准。正因如此，果冻传媒孟若羽的选题会优先选择可以长期跟踪的题材：城市的一天、创作者的一年、一个手艺人的工作台。它们不需要强刺激，却经得起反复观看。高清是技术底线，真实是内容底线，两者共同构成了品牌的品质感。</p>
+
+        <h3>创作者机制：让专业被看见，让新人被接住</h3>
+        <p>视频行业的难点往往不在“拍出来”，而在“持续拍下去”。果冻传媒孟若羽把创作者机制拆成三段：入门阶段的选题辅导与设备支持，成长期的一对一剪辑门诊与官方展映，成熟期的专题共建与正版分发。这套机制的核心不是补贴，而是把专业经验显性化。比如剪辑门诊会要求创作者带着完整时间线来，而不是只带成片；导师会逐段询问“为什么保留这一条”“为什么删掉那一句”，让判断过程变得可学习。同时，品牌坚持在同一专题内保留不同风格的作品，避免内容同质化。多元不是口号，而是在排片表上真实发生的比例。对新人而言，被接住意味着第一次投稿就有人认真看完；对成熟创作者而言，被看见意味着作品能进入更长周期的专题，而不是上线三天就被淹没。这种双向的耐心，是果冻传媒孟若羽内容生态最重要的基础设施，也是“值得信赖”这四个字的具体来源。</p>
+
+        <h3>社区与口碑：评论区也是作品的一部分</h3>
+        <p>在果冻传媒孟若羽，评论区被当作作品的延伸，而不是附属品。运营团队会定期整理高信息量的评论，把它们变成下一期选题的线索：有人指出某段收音过响，下一期就增加现场声处理的教学；有人问某个镜头为什么能稳住，下一期就拆解手持与稳定器的取舍。这种反馈闭环让社区具备了成长性，也让用户从“看的人”变成“参与的人”。口碑并不来自一次投放，而来自每一次兑现：承诺 4K 就真的提供 4K，承诺正版就真的给出清晰的授权说明，承诺更新就真的按周上线。品牌还设立了投稿与反馈双通道，举报与建议都会被归档并公示处理结果。这些看起来笨拙的动作，长期积累出稳定的信任。对一家视频品牌来说，影响力最终不是数字，而是当用户想找某类内容时，会先想到这里。</p>
+
+        <h3>长期运营与社会责任：慢一点的商业逻辑</h3>
+        <p>内容行业的诱惑在于追热点，难点在于抵抗短期诱惑。果冻传媒孟若羽选择把资源集中在可沉淀的资产上：专题库、创作者档案、制作规范与公开课。它们短期不产生爆发式数据，却让品牌具备了穿越周期的能力。社会责任也是同一逻辑：针对青少年用户的观看提示、针对创作者的版权科普、针对地方文化的公益记录计划，都是持续运营而非一次性活动。我们不认为“慢”等于低效，恰恰相反，慢意味着更少的返工、更稳的协作与更长的作品生命周期。当行业讨论流量时，我们更愿意讨论一部作品在三年后是否还值得点开；当讨论规模时，我们更愿意讨论有多少创作者在这里完成了自己的第一部代表作。这就是果冻传媒孟若羽想要的官方网站：不喧哗，但每一处都能被验证。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 + 榜单 -->
+  <section class="jmj-section" id="jmj-voices" aria-labelledby="jmj-voices-title">
+    <div class="jmj-wrap">
+      <div class="jmj-sec-head">
+        <div>
+          <div class="jmj-eyebrow">Voice of community</div>
+          <h2 class="jmj-sec-title" id="jmj-voices-title">用户口碑｜果冻传媒孟若羽的真实反馈</h2>
+          <p class="jmj-sec-desc">来自创作者、观众与合作方的评价，语气与关注点各不相同，我们原样保留。</p>
+        </div>
+      </div>
+
+      <div class="jmj-score">
+        <div>
+          <div class="big">4.8</div>
+          <div style="font-size:12.5px;color:var(--jmj-muted);">综合评分（满分 5.0）</div>
+        </div>
+        <div class="bars">
+          <div class="jmj-bar"><i style="width:92%"></i></div>
+          <div class="jmj-bar"><i style="width:88%"></i></div>
+          <div class="jmj-bar"><i style="width:95%"></i></div>
+          <div class="jmj-bar"><i style="width:80%"></i></div>
+        </div>
+        <div style="font-size:12.5px;color:var(--jmj-muted);line-height:1.9;">
+          内容质量 4.9 · 更新稳定 4.8<br>社区氛围 4.7 · 创作者支持 4.6
+        </div>
+      </div>
+
+      <div class="jmj-comments">
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ff5a5f,#ffa25c);" aria-hidden="true">许</span>
+            <span><b>许一川</b><small>纪录片爱好者 · 3 天前</small></span>
+          </div>
+          <p>《光影之间》我看了三遍。第二遍开始注意收音，第三遍才开始注意剪辑点，这种经得起反复看的片子现在不多了。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#38e0c4,#8ef4e3);" aria-hidden="true">苏</span>
+            <span><b>苏小满</b><small>新手创作者 · 1 周前</small></span>
+          </div>
+          <p>第一次投稿就被认真回复了，剪辑门诊给的建议非常具体，不是那种“多练练就好”的空话。改完重投已经过了初审。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#7c6cff,#38a1e0);" aria-hidden="true">老</span>
+            <span><b>老白不白</b><small>企业合作方 · 5 天前</small></span>
+          </div>
+          <p>合作过一次专题拍摄，流程比预期清楚很多，从脚本确认到交付版本都有明确节点，授权说明也写得明白。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ffa25c,#ffe0a3);" aria-hidden="true">芒</span>
+            <span><b>芒果不加冰</b><small>普通观众 · 2 天前</small></span>
+          </div>
+          <p>唯一想吐槽的是更新通知偶尔会晚一点，不过内容是真的稳。建议做个小程序或者订阅提醒，会更方便。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#e0e6ef,#9aa1ae);color:#171a21;" aria-hidden="true">镜</span>
+            <span><b>镜头后面的猫</b><small>摄影从业者 · 4 天前</small></span>
+          </div>
+          <p>测评系列的标准很统一，这点很难得。同参数对比直接给结论，不会为了讨好品牌绕圈子，算得上行业里比较有底线的做法。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ff8a5c,#ff5a5f);" aria-hidden="true">阿</span>
+            <span><b>阿岚的小屋</b><small>生活方式创作者 · 3 周前</small></span>
+          </div>
+          <p>南方慢记那几期给了我很大启发，原来日常记录不用刻意设计大情节，把一件小事拍完整就足够动人。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#38e0c4,#7c6cff);" aria-hidden="true">周</span>
+            <span><b>周未眠</b><small>剪辑学习期 · 6 天前</small></span>
+          </div>
+          <p>教程里给的时间线模板我直接用了，效率提升很明显。希望后面能多讲讲混音，这块资料比较少。</p>
+        </article>
+        <article class="jmj-comment">
+          <div class="jmj-comment-top">
+            <span class="jmj-avatar" style="background:linear-gradient(135deg,#ffe0a3,#ffa25c);color:#171a21;" aria-hidden="true">林</span>
+            <span><b>林间有风</b><small>户外爱好者 · 2 周前</small></span>
+          </div>
+          <p>山野那几集的环境声保留得很好，戴着耳机看像真的在山上。希望以后能出无解说纯环境声加长版。</p>
+        </article>
+      </div>
+
+      <div class="jmj-rank" style="margin-top:30px;">
+        <div class="jmj-rank-col">
+          <h3>本周热度榜 <span>官方统计</span></h3>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">1</span><div><h4>光影之间：一位创作者的城市手记</h4><span>孟若羽工作室 · 12.6 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">2</span><div><h4>测评：三套拍摄设备，谁的直出更能打</h4><span>九号片场 · 9.2 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">3</span><div><h4>访谈：镜头之外，我们为什么还在拍</h4><span>林小栖 · 7.3 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">4</span><div><h4>创作幕后：一场夜戏是怎么拍成的</h4><span>阿舟 · 6.4 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">5</span><div><h4>慢一点：清晨六点的城市呼吸</h4><span>山海之间 · 5.8 万播放</span></div></div>
+        </div>
+        <div class="jmj-rank-col">
+          <h3>新人榜 <span>本月新增</span></h3>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">1</span><div><h4>把出租屋拍成了一部短片</h4><span>小满不加班 · 首作 3.1 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">2</span><div><h4>楼下早餐铺的十七年</h4><span>街角纪录 · 2.7 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">3</span><div><h4>雨天骑车通勤的三个机位</h4><span>胡同骑士 · 2.2 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">4</span><div><h4>阳台种植的第九十天</h4><span>青苔计划 · 1.9 万播放</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">5</span><div><h4>给外婆拍一支不剪的片子</h4><span>阿原 · 1.6 万播放</span></div></div>
+        </div>
+        <div class="jmj-rank-col">
+          <h3>口碑榜 <span>用户评分</span></h3>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">1</span><div><h4>创作者档案室：一个摄影师的十年硬盘</h4><span>评分 4.9 · 评价 1,208 条</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">2</span><div><h4>三分半讲清：一支短片的剪辑节奏</h4><span>评分 4.9 · 评价 964 条</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">3</span><div><h4>城市光影计划：午夜末班</h4><span>评分 4.8 · 评价 872 条</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">4</span><div><h4>山海之间：海岸线的四十分钟</h4><span>评分 4.8 · 评价 690 条</span></div></div>
+          <div class="jmj-rank-item"><span class="jmj-rank-no">5</span><div><h4>南方慢记：厨房里的第十五分钟</h4><span>评分 4.7 · 评价 573 条</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 辅助区 -->
+  <section class="jmj-section" id="jmj-aux" aria-labelledby="jmj-aux-title">
+    <div class="jmj-wrap">
+      <div class="jmj-sec-head">
+        <div>
+          <div class="jmj-eyebrow">News · partners · help</div>
+          <h2 class="jmj-sec-title" id="jmj-aux-title">品牌动态与帮助｜果冻传媒孟若羽</h2>
+          <p class="jmj-sec-desc">企业动态、合作伙伴与常见问题，帮助新访客更快理解我们如何持续运营。</p>
+        </div>
+        <button class="jmj-btn jmj-btn-primary" data-jmj-modal="submit" type="button">我要投稿</button>
+      </div>
+
+      <div class="jmj-aux-grid">
+        <div class="jmj-panel">
+          <h3>企业动态 · 官方发布</h3>
+          <ul class="jmj-news">
+            <li><time>11-20</time><span>《孟若羽·影像手记》第七期上线，同步开放 4K HDR 版本与导演 commentary 音轨。</span></li>
+            <li><time>11-14</time><span>“城市光影”原创影像征集开启报名，面向所有创作者，投稿截止 12 月 18 日。</span></li>
+            <li><time>11-06</time><span>创作者扶持计划第三期名单公布，新增 30 位签约创作者，首次开放户外题材专项。</span></li>
+            <li><time>10-28</time><span>官方网站内容库完成一次检索升级，支持按专题、作者、标签三种方式筛选。</span></li>
+            <li><time>10-15</time><span>品牌与三家地方文化机构签署公益记录合作，年内完成 6 部在地影像。</span></li>
+          </ul>
+        </div>
+
+        <div class="jmj-panel">
+          <h3>合作品牌 · 长期伙伴</h3>
+          <div class="jmj-partners">
+            <div class="jmj-partner">光影器材社</div>
+            <div class="jmj-partner">城市文化馆</div>
+            <div class="jmj-partner">南方唱片</div>
+            <div class="jmj-partner">山野户外</div>
+            <div class="jmj-partner">一间书店</div>
+            <div class="jmj-partner">青苔计划</div>
+          </div>
+          <p style="margin-top:16px;font-size:12.6px;color:var(--jmj-muted);">合作以内容共建为主，所有联名作品均标注授权信息与制作团队，保障正版与透明。</p>
+        </div>
+
+        <div class="jmj-panel jmj-faq">
+          <h3>常见问题</h3>
+          <details>
+            <summary>如何向果冻传媒孟若羽投稿？</summary>
+            <p>点击页面中的“投稿 / 报名”按钮填写表单，注明作品类型、时长与素材来源。初审通常在 7 个工作日内完成，通过后会收到剪辑门诊邀约。</p>
+          </details>
+          <details>
+            <summary>作品的版权归谁？</summary>
+            <p>创作者保留署名权与作品著作权，平台获得官方渠道的展示与分发授权，具体范围在投稿协议中逐条列明，可随时申请下架。</p>
+          </details>
+          <details>
+            <summary>是否支持高清与 4K 播放？</summary>
+            <p>重点专题与官方发布内容提供 4K HDR 版本，其余内容默认 1080P 高清，播放器会根据网络状况自动切换清晰度。</p>
+          </details>
+          <details>
+            <summary>新人没有设备可以参加扶持计划吗？</summary>
+            <p>可以。扶持计划提供设备借用与基础拍摄培训，重点评估选题与完成度，不以器材规格作为门槛。</p>
+          </details>
+          <details>
+            <summary>如何反馈问题或举报内容？</summary>
+            <p>可通过页脚的反馈入口提交，注明作品名称与具体问题。我们承诺在 3 个工作日内回复，并将处理结果归档公示。</p>
+          </details>
+          <details>
+            <summary>合作拍摄的周期一般是多久？</summary>
+            <p>短片类通常 2-4 周，专题类 6-10 周。具体节点会在立项会上确认，包含脚本、勘景、拍摄、初剪、终审五个阶段。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="jmj-footer">
+  <div class="jmj-wrap">
+    <div class="jmj-footer-grid">
+      <div>
+        <h4>果冻传媒孟若羽 · 官方网站</h4>
+        <p>原创高清影像品牌与创作者社区，持续运营中。以真实为底线，以品质为标准，构建值得信赖的内容生态。</p>
+        <p style="color:#6b7280;">官方发布 · 正版授权 · 用户至上</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#jmj-focus">焦点内容</a></li>
+          <li><a href="#jmj-topics">专题企划</a></li>
+          <li><a href="#jmj-deep">品牌解析</a></li>
+          <li><a href="#jmj-voices">用户口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#" data-jmj-modal="submit">投稿与报名</a></li>
+          <li><a href="#" data-jmj-modal="share">分享本站</a></li>
+          <li><a href="#" data-jmj-modal="feedback">举报与反馈</a></li>
+          <li><a href="#jmj-aux">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱：hello@jellimedia.example</li>
+          <li>工作时间：周一至周五 10:00-19:00</li>
+          <li>地址：城市影像中心 3 层</li>
+          <li>© 2026 果冻传媒孟若羽</li>
+        </ul>
+      </div>
+    </div>
+    <div class="jmj-footer-bottom">
+      <span>果冻传媒孟若羽官方网站 | 版权所有 | 持续运营中</span>
+      <span>备案号：影字 2026-1108 | 沪ICP备 00000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹层 -->
+<div class="jmj-modal" id="jmjModal" role="dialog" aria-modal="true" aria-labelledby="jmjModalTitle">
+  <div class="jmj-modal-box">
+    <h3 id="jmjModalTitle">投稿与报名</h3>
+    <p id="jmjModalDesc">请留下作品名称与联系方式，编辑部会在 7 个工作日内回复。</p>
+    <div id="jmjModalFields">
+      <input type="text" placeholder="作品名称 / 专题方向" aria-label="作品名称">
+      <input type="text" placeholder="联系方式（邮箱或社交账号）" aria-label="联系方式">
+      <textarea rows="3" placeholder="一句话介绍你的作品" aria-label="作品介绍"></textarea>
+    </div>
+    <button class="jmj-modal-close" type="button" id="jmjModalClose">我知道了</button>
+  </div>
+</div>
+
+<div class="jmj-toast" id="jmjToast" role="status" aria-live="polite"></div>
+<button class="jmj-top" id="jmjTop" aria-label="回到顶部" type="button">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航 */
+  var burger = document.getElementById('jmjBurger');
+  var nav = document.getElementById('jmjNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('jmjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* 搜索反馈 */
+  var form = document.getElementById('jmjSearchForm');
+  var input = document.getElementById('jmjSearchInput');
+  var searchMsg = document.getElementById('jmjSearchMsg');
+  function doSearch(){
+    var q = (input && input.value || '').trim();
+    if(!q){
+      showToast('请输入关键词后再搜索');
+      if(searchMsg){ searchMsg.textContent = '请输入关键词'; searchMsg.style.display='block'; }
+      return;
+    }
+    var found = false;
+    var nodes = document.querySelectorAll('h3, h4');
+    for(var i=0;i<nodes.length;i++){
+      if(nodes[i].textContent.indexOf(q) > -1){ found = true; break; }
+    }
+    var text = found ? ('找到与「' + q + '」相关的内容') : ('暂未找到「' + q + '」，可试试“城市”“剪辑”“访谈”');
+    showToast(text);
+    if(searchMsg){ searchMsg.textContent = text; searchMsg.style.display = 'block'; }
+  }
+  if(form){ form.addEventListener('submit', function(e){ e.preventDefault(); doSearch(); }); }
+  var searchBtn = document.getElementById('jmjSearchBtn');
+  if(searchBtn){ searchBtn.addEventListener('click', function(e){ e.preventDefault(); doSearch(); }); }
+
+  /* 点赞 */
+  document.querySelectorAll('[data-jmj-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = parseInt(btn.getAttribute('data-jmj-like'), 10) || 0;
+      var inner = btn.querySelector('b');
+      var liked = btn.classList.toggle('active');
+      var val = liked ? base + 1 : base;
+      if(inner){ inner.textContent = val.toLocaleString('en-US'); }
+      showToast(liked ? '已点赞' : '已取消点赞');
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('[data-jmj-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('active');
+      btn.textContent = on ? '已收藏' : '收藏';
+      showToast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  document.querySelectorAll('[data-jmj-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var url = window.location.href;
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); showToast('链接已复制'); }
+        catch(err){ showToast('复制失败，请手动复制'); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){ showToast('链接已复制'); }, fallback);
+      }else{
+        fallback();
+      }
+    });
+  });
+
+  /* 通用弹窗 */
+  var modal = document.getElementById('jmjModal');
+  var modalTitle = document.getElementById('jmjModalTitle');
+  var modalDesc = document.getElementById('jmjModalDesc');
+  var modalFields = document.getElementById('jmjModalFields');
+  var modalClose = document.getElementById('jmjModalClose');
+  var modalContent = {
+    submit: { t:'投稿与报名', d:'请留下作品名称与联系方式，编辑部会在 7 个工作日内回复。', f:true },
+    share: { t:'分享本期片单', d:'可复制页面链接，或通过微信、微博、QQ 分享给朋友。', f:false },
+    feedback: { t:'举报与反馈', d:'请描述问题内容与所在位置，我们会在 3 个工作日内处理并归档。', f:true },
+    author: { t:'创作者档案', d:'', f:false }
+  };
+  function openModal(key, extra){
+    if(!modal) return;
+    var cfg = modalContent[key] || modalContent.submit;
+    modalTitle.textContent = cfg.t;
+    modalDesc.textContent = (key === 'author' && extra) ? extra : cfg.d;
+    if(modalFields){ modalFields.style.display = cfg.f ? 'block' : 'none'; }
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    if(!modal) return;
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-jmj-modal]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      openModal(el.getAttribute('data-jmj-modal'));
+    });
+  });
+  document.querySelectorAll('[data-jmj-author]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var parts = el.getAttribute('data-jmj-author').split('|');
+      openModal('author', parts[1] || '');
+      modalTitle.textContent = parts[0] + ' · 创作者档案';
+    });
+  });
+  if(modalClose){ modalClose.addEventListener('click', closeModal); }
+  if(modal){ modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); }); }
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('jmjTop');
+  window.addEventListener('scroll', function(){
+    if(!topBtn) return;
+    if(window.scrollY > 520){ topBtn.classList.add('show'); }
+    else{ topBtn.classList.remove('show'); }
+  }, { passive:true });
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+  }
+
+  /* 锚点补偿吸顶高度 */
+  document.querySelectorAll('a[href^="#jmj-"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id === '#jmj-top'){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var sticky = document.querySelector('.jmj-sticky');
+      var offset = sticky ? sticky.offsetHeight : 0;
+      var y = target.getBoundingClientRect().top + window.scrollY - offset - 10;
+      window.scrollTo({ top: y, behavior:'smooth' });
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
